@@ -1,0 +1,95 @@
+.container {
+ background-color: black;
+}
+
+.bg{
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/img01.jpg);
+    /* position:fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.row {
+max-width: 1280px;
+/* background-color: red; */
+margin: auto;
+padding-top: 6%;
+padding-bottom: 6%;
+}
+
+.column {
+
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+}
+
+p2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    line-height: 2;
+}
+
+p3 {
+    font-family: Helvetica;
+    font-size: 20px;
+    line-height: 2;
+}
+
+p, .button {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.head {
+    max-width: 1280px;
+    /* margin: auto; background-color: red; */
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.logo {
+    width: auto;
+    height:50px;
+}
+
+.language {
+    background: transparent;
+    border: 2px solid white;
+    margin: auto !important;
+    border-radius: 25px;
+    width: 100px;
+    padding: 4px;
+    color:white;
+    text-align: center;
+}
+
+.button {
+    color:white;
+    background-color: red;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px; padding-right: 5px;
+    width: 75px;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #c00;
+}
