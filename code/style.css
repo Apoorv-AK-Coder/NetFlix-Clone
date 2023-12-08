@@ -1,5 +1,6 @@
 .container {
  background-color: black;
+ border-bottom:10px solid #808080;
 }
 
 .bg{
@@ -8,20 +9,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    border-bottom:10px solid #808080;
 }
 
 .row {
 max-width: 1280px;
-/* background-color: red; */
 margin: auto;
 padding-top: 6%;
 padding-bottom: 6%;
 }
 
-.column {
-
-}
 body {
     padding: 0px;
     margin: 0px;
@@ -88,8 +85,41 @@ p, .button {
     text-align: center;
     margin-left: 15px;
     border-radius: 5px;
+    height:auto;
 }
 
 .button:hover {
+    background-color: #c00;
+}
+
+.mail {
+    flex:1; justify-content:end; display:flex;
+}
+
+.email {
+    background-color: rgba(0, 0, 0, 0.5);
+    border:1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 12px;
+}
+
+.button1 {
+    color:white;
+    background-color: red;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px; padding-right: 20px;
+    width: auto;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 5px;
+    height:auto;
+    font-family: Helvetica;
+    font-size: 30px;
+    line-height: 1.7;
+}
+
+.button1:hover {
     background-color: #c00;
 }
