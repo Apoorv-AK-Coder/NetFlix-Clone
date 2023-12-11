@@ -167,3 +167,10 @@ p, .button {
     margin-top: 75px;
     z-index:-1;
 }
+
+.accordian {
+    background-color: #414141;
+    padding: 20px;
+    display: flex;
+    margin-top: 5px;
+}
