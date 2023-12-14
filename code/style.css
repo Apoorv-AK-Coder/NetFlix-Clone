@@ -229,4 +229,9 @@ p,
 .col1 {
     position: absolute;
     z-index: -1;
+    width: 100%;
+}
+
+.bg2 {
+    background-image: linear-gradient(ti top, rgba(0, 0, 0, 1), black, red);
 }
