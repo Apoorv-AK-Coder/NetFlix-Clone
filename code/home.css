@@ -34,8 +34,16 @@ ul {display: flex; list-style: none;}
     padding: 15px 0;
 }
 
-.images1 {
+.images img {
     width: 200px;
-    height:auto;
-    margin-right: 20px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;    
+}
+
+h3 {overflow: hidden; z-index: 2;}
+
+.column {
+    position: relative;
+
 }
