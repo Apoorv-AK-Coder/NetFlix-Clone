@@ -1,21 +1,20 @@
-let p = fetch("https://api.themoviedb.org/3/discover/movie?api_key=7ee6bd2b1a240379b50d2b8ac4ddfeb0")
+// let p = fetch("https://api.themoviedb.org/3/discover/movie?api_key=7ee6bd2b1a240379b50d2b8ac4ddfeb0");
+let p = fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=7ee6bd2b1a240379b50d2b8ac4ddfeb0")
 
-p.then((response) => {
-    console.log(response.status)
-    console.log(response.ok)
-    return response.result()
-}).then((value2) => {
-    console.log(value2)
-})
+p.then((response) => response.json())
+.then((data) => {
+    console.log(data);
 
-let elm = document.getElementById("intro");
+    const date = data.results[9];
 
-let html = fetch("https://api.themoviedb.org/3/discover/movie?api_key=7ee6bd2b1a240379b50d2b8ac4ddfeb0");
-console.log(elm);
-// elm.insertAdjacentHTML('beforebegin', html);
+    data.results.map((arr) => {
+        const box = document.querySelector(".images");
+        const html = `
+             <div class="images1">
+             <img src="https://image.tmdb.org/t/p/w500/${arr.backdrop_path}" alt="" />
+              </div>
+             `;
+        box.insertAdjacentHTML("beforeend", html);
+      });
 
-// elm.insertAdjacentHTML('afterbegin', html);
-
-elm.insertAdjacentHTML('beforeend', html);
-
-// elm.insertAdjacentHTML('afterend', html);
+    });
