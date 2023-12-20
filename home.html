@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./code/home.css">
     <link rel="stylesheet" href="./code/slider.css">
 
+    <script src="./apikey.js"></script>
 
 
 </head>
@@ -49,14 +50,17 @@
 
     <div class="container">
         <div class="row">
-            <p>Popular on Netflix</p>
-            <div class="slider images api1">
-                
-                <button class="prev"><i class="fa-solid fa-angles-left"></i></button>
-                <button class="next"><i class="fa-solid fa-angles-right"></i></button>
+            <div class="co">
+                <h3>Now Playing</h3>>
+                <div class="slider">
+                    <div class="slides images api1">
+                        <!-- Now Playing API Data -->
+                    </div>
+                    <button class="prev"><i class="fa-solid fa-angles-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-angles-right"></i></button>
+                </div>
             </div>
         </div>
-
     </div>
 
     <div class="container">
@@ -65,7 +69,7 @@
                 <h3>Top 10 Movies in India Today</h3><br>
                 <div class="images api1"> </div>
                 <h3>Continue Watching for Apoorv</h3>
-                <div class="images api2"> </div>
+                <!-- <div class="images api2"> </div> -->
                 <h3>Because you watched Extinction</h3>
                 <div class="images"> </div>
                 <h3>Top Search</h3>
@@ -187,11 +191,7 @@
         </div>
     </div>
 
-    <script src="./apikey.js"></script>
+    <!-- <script src="./apikey.js"></script> -->
     <script src="./slider.js"></script>
-
-
-
 </body>
-
 </html>
