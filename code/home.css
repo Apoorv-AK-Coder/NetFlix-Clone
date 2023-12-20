@@ -36,12 +36,12 @@ ul {display: flex; list-style: none;}
 
 .images img {
     width: 200px;
-    height: 250px;
+    height: 150px;
     object-fit: cover;
     overflow: hidden;    
 }
 
-h3 {overflow: hidden; z-index: 2;}
+/* h3 {overflow: hidden; z-index: 2;} */
 
 .column {
     position: relative;
