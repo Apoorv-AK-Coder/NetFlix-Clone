@@ -1,6 +1,6 @@
 .head {
     display: flex;
-    max-width: 1190px;
+    max-width: 1280px;
     margin: auto;
     padding: 20px 0;
 }
@@ -10,7 +10,7 @@
     /* top:0; */
     left: 50%;
     transform: translate(-50%);
-    width: 1190px;
+    width: 1280px;
     height: 100%;
 }
 ul {display: flex; list-style: none;}
@@ -58,4 +58,8 @@ h3 {position: relative;}
 .column {
     /* position: relative; */
 
+}
+
+.co {
+    margin-top: 25px;
 }

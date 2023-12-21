@@ -1,35 +1,39 @@
-setTimeout(() => {  
-  // console.log('World!'); 
+document.addEventListener('DOMContentLoaded', () => {
+  const sliders = document.querySelectorAll('.slider');
 
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const slides = document.querySelector('.slides');
-const slideItems = document.querySelectorAll('.slide');
-let currentIndex = 0;
-const totalSlides = slideItems.length;
-console.log(totalSlides);
-const slideWidth = slideItems[0].clientWidth;
+  sliders.forEach((slider) => {
+    const prevButton = slider.querySelector('.prev');
+    const nextButton = slider.querySelector('.next');
+    const slides = slider.querySelector('.slides');
+    const slideItems = slider.querySelectorAll('.slide');
+    let currentIndex = 0;
+    const totalSlides = slideItems.length;
+    console.log(totalSlides);
 
-function goToSlide(index) {
-  slides.style.transform = `translateX(-${index * slideWidth}px)`;
-  currentIndex = index;
-}
+    const slideWidth = slideItems[0].clientWidth;
 
-function showNextSlide() {
-  if (currentIndex < totalSlides - 1) {
-    currentIndex = currentIndex + 3;
-    goToSlide(currentIndex);
-  }
-}
+    slides.style.width = `${slideWidth * totalSlides}px`;
 
-function showPrevSlide() {
-  if (currentIndex > 0) {
-    currentIndex = currentIndex - 3;
-    goToSlide(currentIndex);
-  }
-}
+    function goToSlide(index) {
+      slides.style.transform = `translateX(-${index * slideWidth}px)`;
+      currentIndex = index;
+    }
 
-nextButton.addEventListener('click', showNextSlide);
-prevButton.addEventListener('click', showPrevSlide);
+    function showNextSlide() {
+      if (currentIndex < totalSlides - 1) {
+        currentIndex = currentIndex + 3;
+        goToSlide(currentIndex);
+      }
+    }
 
-}, 1000);
+    function showPrevSlide() {
+      if (currentIndex > 0) {
+        currentIndex = currentIndex - 3;
+        goToSlide(currentIndex);
+      }
+    }
+
+    nextButton.addEventListener('click', showNextSlide);
+    prevButton.addEventListener('click', showPrevSlide);
+  });
+});
